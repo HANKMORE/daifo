@@ -1,11 +1,7 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    host: 'localhost',
-    user: 'postgres',
-    password: 'daifotelecom',
-    database: 'DaifoTelecomPrueba',
-    port: '5432'
+    connectionString:'postgres://postgresql://daifotelecomprueba_enqw_user:gJkAYmifWhk99j5fWze9qTVIo86kcdoX@dpg-ct37rj5umphs73dpf7ug-a/daifotelecomprueba_enqw'
 });
 
 const getUsers = async (req, res) => {
